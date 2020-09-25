@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {% include 'result.html' %}
+
+<h1>welcome  home page</h1>
+
+<div class="row">
+{% for d in doc %}
+ <style>  
+            .gfg { 
+                width:auto; 
+                text-align:center; 
+                padding:20px; 
+            } 
+            img { 
+                width: 100%; 
+                height: 100%; 
+                object-fit: contain; 
+            } 
+        </style>
+  <div class="card" style="width: 14.3rem">
+  <img src="{{d.image.url}}" id='my-img' alt="pic not available">
+  
+  <div class="card-body">
+    <h5 class="card-title">{{d.name}}</h5>
+    <p class="card-text">{{d.about}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+    
+</div>
+</div>
+{% endfor %}
+    </div>
+    
+</body>
+
+</html>
+
