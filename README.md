@@ -6,4 +6,7 @@ However the templates uses template inheritance and jinja format, so make change
 not recomended if u r totally new to django.
 u dont have to make django project from skratch just clone the repo and make changes in templates.
 
+clone the repo and run >> "python3 manage.py runserver"
+then open your browser and type:127.0.0.1:8000
+
 happy coding..
